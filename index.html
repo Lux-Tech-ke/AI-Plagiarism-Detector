@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Plagiarism Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🔍</span>
+                <span class="logo-text">DetectAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#features" onclick="navigateTo('features')">Features</a></li>
+                <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn-secondary" onclick="navigateTo('login')">Login</button>
+                <button class="btn-primary" onclick="navigateTo('signup')">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div id="app-container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Detect AI-Generated Content & Plagiarism</h1>
+                    <p>Advanced AI-powered analysis to identify plagiarism and AI-generated text with high accuracy</p>
+                    <button class="btn-primary btn-large" onclick="navigateTo('signup')">Get Started Free</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663431413088/b4Fmey6cneUcxgWX6saB8e/hero-banner-DMNc5kurDb5DMkUJEiJqnx.webp" alt="AI Detection">
+                </div>
+            </section>
+
+            <section class="features-preview">
+                <h2>Why Choose DetectAI?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663431413088/b4Fmey6cneUcxgWX6saB8e/feature-detection-ByamVg955bwoeRdv9HxaPg.webp" alt="Detection">
+                        <h3>Advanced Detection</h3>
+                        <p>State-of-the-art AI algorithms detect plagiarism and AI-generated content with 99% accuracy</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663431413088/b4Fmey6cneUcxgWX6saB8e/feature-reports-QUUgkQeFtRxEp4L9m4scmN.webp" alt="Reports">
+                        <h3>Detailed Reports</h3>
+                        <p>Comprehensive PDF reports with similarity scores, highlighted matches, and detailed analysis</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663431413088/b4Fmey6cneUcxgWX6saB8e/feature-security-WB3d4emvga2Gc7euF2mzsR.webp" alt="Security">
+                        <h3>Secure & Private</h3>
+                        <p>Your documents are encrypted and never shared. We prioritize your data privacy and security</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Ready to Verify Your Documents?</h2>
+                <p>Join thousands of educators, students, and professionals using DetectAI</p>
+                <button class="btn-primary btn-large" onclick="navigateTo('signup')">Create Free Account</button>
+            </section>
+        </div>
+
+        <!-- Features Page -->
+        <div id="features" class="page">
+            <section class="page-header">
+                <h1>Our Features</h1>
+                <p>Comprehensive tools for document verification and plagiarism detection</p>
+            </section>
+
+            <section class="features-detailed">
+                <div class="feature-item">
+                    <h3>🎯 Plagiarism Detection</h3>
+                    <p>Scan documents against billions of web pages, academic papers, and previously submitted documents to identify plagiarism with precision.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🤖 AI Content Detection</h3>
+                    <p>Identify AI-generated text from ChatGPT, GPT-4, and other language models with advanced machine learning algorithms.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📊 Similarity Report</h3>
+                    <p>Get detailed similarity percentages, source matching, and highlighted sections showing exactly where matches occur.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📄 PDF Export</h3>
+                    <p>Download professional PDF reports with all findings, charts, and analysis for documentation and sharing.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ Fast Processing</h3>
+                    <p>Most documents are analyzed within seconds, providing quick feedback without compromising accuracy.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔒 Data Security</h3>
+                    <p>Military-grade encryption ensures your documents remain private and secure throughout the analysis process.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="page-header">
+                <h1>About DetectAI</h1>
+                <p>Leading the fight against plagiarism and AI misuse</p>
+            </section>
+
+            <section class="about-content">
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>DetectAI is committed to maintaining academic integrity and professional authenticity in the digital age. We provide educators, students, and organizations with powerful tools to detect plagiarism and AI-generated content, ensuring originality and honesty in all written work.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Why We Exist</h2>
+                    <p>With the rise of AI language models and easy access to content online, plagiarism has become increasingly sophisticated. Traditional detection methods are no longer sufficient. DetectAI combines cutting-edge AI technology with proven plagiarism detection algorithms to provide comprehensive verification solutions.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Technology</h2>
+                    <p>Our platform uses advanced machine learning models trained on millions of documents to identify patterns indicative of plagiarism and AI generation. We continuously update our algorithms to stay ahead of emerging techniques and maintain industry-leading accuracy.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="page-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our support team</p>
+            </section>
+
+            <section class="contact-content">
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>support@detectai.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>123 Tech Street, San Francisco, CA 94105</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login" class="page">
+            <section class="auth-section">
+                <div class="auth-container">
+                    <h1>Login to DetectAI</h1>
+                    <form class="auth-form" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Login</button>
+                    </form>
+                    <p class="auth-link">Don't have an account? <a href="#" onclick="navigateTo('signup')">Sign up here</a></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sign Up Page -->
+        <div id="signup" class="page">
+            <section class="auth-section">
+                <div class="auth-container">
+                    <h1>Create Account</h1>
+                    <form class="auth-form" onsubmit="handleSignup(event)">
+                        <div class="form-group">
+                            <label for="signup-name">Full Name</label>
+                            <input type="text" id="signup-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-confirm">Confirm Password</label>
+                            <input type="password" id="signup-confirm" required>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Create Account</button>
+                    </form>
+                    <p class="auth-link">Already have an account? <a href="#" onclick="navigateTo('login')">Login here</a></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Dashboard Page -->
+        <div id="dashboard" class="page">
+            <section class="dashboard-header">
+                <h1>Dashboard</h1>
+                <button class="btn-secondary" onclick="handleLogout()">Logout</button>
+            </section>
+
+            <section class="dashboard-content">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>Documents Analyzed</h3>
+                        <p class="stat-number" id="stat-documents">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Scans</h3>
+                        <p class="stat-number" id="stat-scans">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Plagiarism Found</h3>
+                        <p class="stat-number" id="stat-plagiarism">0%</p>
+                    </div>
+                </div>
+
+                <div class="upload-section">
+                    <h2>Upload Document</h2>
+                    <div class="upload-area" id="upload-area">
+                        <p>Drag and drop your file here or click to browse</p>
+                        <input type="file" id="file-input" accept=".txt,.pdf,.doc,.docx" style="display: none;">
+                    </div>
+                    <button class="btn-primary" onclick="document.getElementById('file-input').click()">Select File</button>
+                </div>
+
+                <div class="documents-section">
+                    <h2>Recent Documents</h2>
+                    <div id="documents-list" class="documents-list">
+                        <p class="empty-state">No documents yet. Upload your first document to get started.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Analysis Page -->
+        <div id="analysis" class="page">
+            <section class="analysis-header">
+                <button class="btn-secondary" onclick="navigateTo('dashboard')">← Back to Dashboard</button>
+                <h1 id="analysis-title">Document Analysis</h1>
+            </section>
+
+            <section class="analysis-content">
+                <div class="analysis-results">
+                    <div class="result-card">
+                        <h3>Plagiarism Score</h3>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span id="plagiarism-score">0</span>%
+                            </div>
+                        </div>
+                        <p id="plagiarism-status">Analyzing...</p>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>AI Detection Score</h3>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span id="ai-score">0</span>%
+                            </div>
+                        </div>
+                        <p id="ai-status">Analyzing...</p>
+                    </div>
+                </div>
+
+                <div class="analysis-details">
+                    <h2>Detailed Report</h2>
+                    <div id="report-content" class="report-content">
+                        <p>Processing your document...</p>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-primary" onclick="downloadPDF()">Download PDF Report</button>
+                    <button class="btn-secondary" onclick="navigateTo('dashboard')">Back to Dashboard</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 DetectAI. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact" onclick="navigateTo('contact')">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
